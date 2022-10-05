@@ -2,7 +2,7 @@
 
 Điều đầu tiên cần làm là check xem user hiện tại có quyền gì không? Được như bên dưới thì ngon:
 
-```console
+```shell
 $ sudo -l
 User example may run the following commands on localhost:
    ... NOPASSWD: /bin/bash
@@ -16,7 +16,7 @@ User example may run the following commands on localhost:
 
 Tìm các file có SUID Bit:
 
-```console
+```shell
 $ find / -perm -u=s -type f 2>/dev/null
 ```
 
